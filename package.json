@@ -1,5 +1,30 @@
 {
   "dependencies": {
-    "express-handlebars": "^6.0.5"
-  }
+    "engine": "^1.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "node": "^17.7.2",
+    "nodemon": "^2.0.15",
+    "sass": "^1.50.1"
+  },
+  "name": "honoursgame",
+  "description": "This is a game I made for honours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js & npm run sass",
+    "sass": "sass --watch source/scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniquemois/honoursgame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniquemois/honoursgame/issues"
+  },
+  "homepage": "https://github.com/daniquemois/honoursgame#readme"
 }
