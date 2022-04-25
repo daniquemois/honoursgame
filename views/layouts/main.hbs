@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
-    <title>{{title}}</title>
-</head>
-<body>
-    {{!-- Dit is de main hbs. Dit is overal dus van toepassing --}}
-    {{{body}}}
+    {{> head }}
+<body class="wrapper">
+    {{> header }}
+    <main>
+
+        <section>
+            <img src="public/images/circleline.png" id="circleline">
+            <img src="public/images/circlesolid.png" id="circlesolid">
+            <img src="public/images/triangleline.png" id="triangleline">
+            <img src="public/images/trianglesolid.png" id="trianglesolid">
+        </section>
+        
+    </main>
 </body>
 </html>

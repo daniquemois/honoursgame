@@ -1,0 +1,78 @@
+#circleline{
+    width: 150px;
+    height: 150px;
+    opacity: .1;
+    position: relative;
+    animation-name: circleline;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes circleline {
+    0%   {left:3px; top:6px;}
+    12%  {left:17px; top:9px;}
+    25%  {left:36px; top:12px;}
+    50%  {left:67px; top:24px;}
+    75%  {left:36px; top:36px;}
+    100% {left:3px; top:6px;}
+}
+
+#circlesolid{
+    width: 150px;
+    height: 150px;
+    opacity: .1;
+    position: relative;
+    animation-name: circlesolid;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    }
+
+@keyframes circlesolid {
+    0%   {right:3px; bottom:6px;}
+    12%  {right:17px; bottom:9px;}
+    25%  {right:36px; bottom:12px;}
+    50%  {right:67px; bottom:24px;}
+    75%  {right:36px; bottom:36px;}
+    100% {right:3px; bottom:6px;}
+}
+
+#triangleline{
+    width: 150px;
+    height: 150px;
+    opacity: .1;
+    position: relative;
+    animation-name: triangleline;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes triangleline {
+    0%   {left:23px; top:426px;}
+    12%  {left:37px; top:429px;}
+    25%  {left:56px; top:432px;}
+    50%  {left:87px; top:444px;}
+    75%  {left:56px; top:456px;}
+    100% {left:23px; top:426px;}
+}
+#trianglesolid{
+    width: 150px;
+    height: 150px;
+    opacity: .1;
+    position: relative;
+    animation-name: trianglesolid;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes trianglesolid {
+    0%   {left:223px; top:226px;}
+    12%  {left:237px; top:229px;}
+    25%  {left:256px; top:232px;}
+    50%  {left:287px; top:244px;}
+    75%  {left:256px; top:256px;}
+    100% {left:223px; top:226px;}
+}
