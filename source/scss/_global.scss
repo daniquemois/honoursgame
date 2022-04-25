@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#settings{
+    height: 4em;
+    width: 4em;
+    padding: 1em;
+    opacity: .2;
+}
+
 @keyframes bgcolor {
     0% {
         background-color: #45a3e5

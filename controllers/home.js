@@ -8,5 +8,5 @@ const index = (req, res) => {
 };
 
 module.exports = {
-	index: index,
+	index: index
 };
