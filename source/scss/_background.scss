@@ -1,120 +1,148 @@
-#circleline{
-    width: 150px;
-    height: 150px;
-    opacity: .1;
-    position: relative;
-    animation-name: circlesolid;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+#background{
     position: absolute;
-}
-
-@keyframes circleline {
-    0%   {left:103px; top:6px;}
-    12%  {left:117px; top:9px;}
-    25%  {left:136px; top:12px;}
-    50%  {left:167px; top:24px;}
-    75%  {left:136px; top:36px;}
-    100% {left:103px; top:6px;}
-}
-
-#circlesolid{
-    width: 150px;
-    height: 150px;
-    opacity: .1;
-    position: relative;
-    animation-name: circleline;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: absolute;
+    z-index: -80;
+    top: 0em;
+    left: 0em;
+    #circleline{
+        width: 150px;
+        height: 150px;
+        opacity: .1;
+        position: relative;
+        animation-name: circleline;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes circleline {
+        0%   {left:53px; top:6px;}
+        12%  {left:67px; top:9px;}
+        25%  {left:86px; top:12px;}
+        50%  {left:117px; top:24px;}
+        75%  {left:86px; top:36px;}
+        100% {left:53px; top:6px;}
+    }
+    
+    #circlesolid{
+        width: 150px;
+        height: 150px;
+        opacity: .1;
+        position: relative;
+        animation-name: circlesolid;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+    
+    @keyframes circlesolid {
+        0%   {right:0px; bottom:6px;}
+        12%  {right:5px; bottom:9px;}
+        25%  {right:10px; bottom:12px;}
+        50%  {right:20px; bottom:24px;}
+        75%  {right:10px; bottom:36px;}
+        100% {right:0px; bottom:6px;}
+    }
+    
+    #triangleline{
+        width: 150px;
+        height: 150px;
+        opacity: .1;
+        position: relative;
+        animation-name: triangleline;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes triangleline {
+        0%   {left:23px; top:126px;}
+        12%  {left:37px; top:129px;}
+        25%  {left:56px; top:132px;}
+        50%  {left:87px; top:144px;}
+        75%  {left:56px; top:156px;}
+        100% {left:23px; top:126px;}
+    }
+    #trianglesolid{
+        width: 150px;
+        height: 150px;
+        opacity: .1;
+        position: relative;
+        animation-name: trianglesolid;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transform: rotate(60deg);
+    }
+    
+    @keyframes trianglesolid {
+        0%   {left:103px; top:26px;}
+        12%  {left:117px; top:29px;}
+        25%  {left:136px; top:32px;}
+        50%  {left:167px; top:44px;}
+        75%  {left:136px; top:56px;}
+        100% {left:103px; top:26px;}
+    }
+    
+    #squaresolid{
+        width: 150px;
+        height: 150px;
+        opacity: .1;
+        position: relative;
+        animation-name: squaresolid;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transform: rotate(60deg);
+    }
+    
+    @keyframes squaresolid {
+        0%   {left: 23px; top:226px;}
+        12%  {left: 17px; top:229px;}
+        25%  {left: 16px; top:232px;}
+        50%  {left:27px; top:244px;}
+        75%  {left:16px; top:256px;}
+        100% {left: 23px; top:226px;}
+    }
+    
+    #squareline{
+        width: 150px;
+        height: 150px;
+        opacity: .1;
+        position: relative;
+        animation-name: squareline;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transform: rotate(60deg);
+    }
+    
+    @keyframes squareline {
+        0%   {right:-13px; top:426px;}
+        12%  {right:-7px; top:429px;}
+        25%  {right: 6px; top:432px;}
+        50%  {right: 27px; top:444px;}
+        75%  {right: 16px; top:456px;}
+        100% {right:-13px; top:426px;}
+    }
+} 
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
     }
 
-@keyframes circlesolid {
-    0%   {right:3px; bottom:6px;}
-    12%  {right:17px; bottom:9px;}
-    25%  {right:36px; bottom:12px;}
-    50%  {right:67px; bottom:24px;}
-    75%  {right:36px; bottom:36px;}
-    100% {right:3px; bottom:6px;}
-}
+    30% {
+        background-color: #66bf39
+    }
 
-#triangleline{
-    width: 150px;
-    height: 150px;
-    opacity: .1;
-    position: relative;
-    animation-name: triangleline;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: absolute;
-}
+    60% {
+        background-color: #eb670f
+    }
 
-@keyframes triangleline {
-    0%   {left:23px; top:426px;}
-    12%  {left:37px; top:429px;}
-    25%  {left:56px; top:432px;}
-    50%  {left:87px; top:444px;}
-    75%  {left:56px; top:456px;}
-    100% {left:23px; top:426px;}
-}
-#trianglesolid{
-    width: 150px;
-    height: 150px;
-    opacity: .1;
-    position: relative;
-    animation-name: squareline;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: absolute;
-}
+    90% {
+        background-color: #f35
+    }
 
-@keyframes trianglesolid {
-    0%   {left:223px; top:226px;}
-    12%  {left:237px; top:229px;}
-    25%  {left:256px; top:232px;}
-    50%  {left:287px; top:244px;}
-    75%  {left:256px; top:256px;}
-    100% {left:223px; top:226px;}
+    100% {
+        background-color: #864cbf
+    }
 }
-
-#squaresolid{
-    width: 150px;
-    height: 150px;
-    opacity: .1;
-    position: relative;
-    animation-name: squaresolid;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    transform: rotate(60deg);
-}
-
-@keyframes squaresolid {
-    0%   {left:-23px; top:226px;}
-    12%  {left:-17px; top:229px;}
-    25%  {left:-6px; top:232px;}
-    50%  {left:17px; top:244px;}
-    75%  {left:6px; top:256px;}
-    100% {left:-23px; top:226px;}
-}
-
-#squareline{
-    width: 150px;
-    height: 150px;
-    opacity: .1;
-    position: relative;
-    animation-name: trianglesolid;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    transform: rotate(60deg);
-}
-
-@keyframes squareline {
-    0%   {right:-33px; top:526px;}
-    12%  {right:-27px; top:529px;}
-    25%  {right:-16px; top:532px;}
-    50%  {right:7px; top:544px;}
-    75%  {right:-6px; top:556px;}
-    100% {right:-33px; top:526px;}
+body {
+    -webkit-animation: bgcolor 40s infinite;
+    animation: bgcolor 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }

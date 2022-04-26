@@ -7,6 +7,16 @@ const index = (req, res) => {
 	});
 };
 
+const explanation = (req, res) => {
+	const page = {
+		title: "Explanation"
+	};
+	res.status(200).render('explanation', { 
+		page: page
+	});
+};
+
 module.exports = {
-	index: index
+	index: index,
+	explanation: explanation
 };
